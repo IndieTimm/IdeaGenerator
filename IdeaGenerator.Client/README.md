@@ -1,4 +1,4 @@
-# idea-generator
+в# idea-generator
 
 ## Project setup
 ```

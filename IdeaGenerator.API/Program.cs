@@ -11,6 +11,8 @@ namespace IdeaGenerator
 {
     public class Program
     {
+        private const string ContentDirectory = "Content";
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -21,6 +23,7 @@ namespace IdeaGenerator
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseWebRoot(ContentDirectory);
                 });
     }
 }
